@@ -1,0 +1,17 @@
+{
+  "DESIGN_NAME": "anoc_rv_mesh_4x4_asic_top",
+  "VERILOG_FILES": [
+    "dir::../results/synthesis/anoc_rv_mesh_4x4_asic_top_netlist.v"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 14.0,
+  "PDK": "sky130A",
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY_PCT": 50,
+  "PL_RESIZER_SETUP_MAX_BUFFER_PCT": 80,
+  "PL_RESIZER_SETUP_REPAIR_TNS_PCT": 100,
+  "PL_RESIZER_SETUP_GATE_CLONING": true,
+  "PL_RESIZER_SETUP_BUFFERING": true,
+  "PL_TIMING_DRIVEN": true
+}

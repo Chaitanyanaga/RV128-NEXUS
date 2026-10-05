@@ -1,0 +1,12 @@
+========================================
+     RV128I -> ANoC -> MEMORY TEST
+========================================
+Destination : (3,3)
+Write Addr  : 00000000000000000000000000000100
+Write Data  : aaaabbbbccccddddeeeeffff12345678
+MESH ROUTING PASS
+MEMORY WRITE PASS
+========================================
+   RV128I ANOC END-TO-END TEST PASS
+========================================
+tb/riscv/tb_rv128i_anoc_end_to_end.sv:92: $finish called at 156000 (1ps)

@@ -1,0 +1,7 @@
+HEAD FLIT PASS : 44cc02789abcdef01111222233334444
+BODY FLIT PASS : 80cc0337777bbbbfffc48d159e048d15
+TAIL FLIT PASS : c0cc00000000000000000aaaabbbbccc
+========================================
+   RV128I 3-FLIT PACKETIZER TEST PASS
+========================================
+tb/riscv/tb_rv128i_noc_packetizer.sv:167: $finish called at 56000 (1ps)

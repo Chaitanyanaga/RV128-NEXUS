@@ -1,0 +1,10 @@
+ADD DECODE PASS
+SUB DECODE PASS
+LOAD DECODE PASS
+STORE DECODE PASS
+BRANCH DECODE PASS
+JAL DECODE PASS
+========================================
+      RV128I DECODER TEST PASS
+========================================
+tb/riscv/tb_rv128i_decoder.sv:100: $finish called at 6000 (1ps)

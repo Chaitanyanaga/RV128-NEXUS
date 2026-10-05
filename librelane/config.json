@@ -1,0 +1,33 @@
+{
+  "DESIGN_NAME": "rv128i_anoc_soc_top",
+  "VERILOG_FILES": [
+    "dir::../rtl/include/anoc_rv_pkg.sv",
+    "dir::../rtl/fifo/anoc_rv_fifo.sv",
+    "dir::../rtl/fifo/anoc_rv_priority_fifo.sv",
+    "dir::../rtl/router/anoc_rv_arbiter.sv",
+    "dir::../rtl/router/anoc_rv_packet.sv",
+    "dir::../rtl/router/anoc_rv_packet_parser.sv",
+    "dir::../rtl/router/anoc_rv_routing_unit.sv",
+    "dir::../rtl/router/anoc_rv_router_buffered.sv",
+    "dir::../rtl/noc/anoc_rv_mesh.sv",
+    "dir::../rtl/riscv/rv128i_alu.sv",
+    "dir::../rtl/riscv/rv128i_regfile.sv",
+    "dir::../rtl/riscv/rv128i_decoder.sv",
+    "dir::../rtl/riscv/rv128i_pc.sv",
+    "dir::../rtl/riscv/rv128i_fetch.sv",
+    "dir::../rtl/riscv/rv128i_cpu.sv",
+    "dir::../rtl/riscv/rv128i_noc_packetizer.sv",
+    "dir::../rtl/riscv/rv128i_anoc_node.sv",
+    "dir::../rtl/riscv/rv128i_anoc_memory.sv",
+    "dir::../rtl/riscv/rv128i_anoc_mesh_top.sv",
+    "dir::../rtl/riscv/rv128i_anoc_soc_top.sv"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 5,
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY_PCT": 55,
+  "IO_PIN_ORDER_CFG": "dir::pin_order.cfg",
+  "RUN_POST_CTS_RESIZER_TIMING": true,
+  "RUN_POST_GRT_RESIZER_TIMING": true,
+  "PAD_LIBS": null
+}

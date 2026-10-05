@@ -1,0 +1,6 @@
+========================================
+RV128I + ANoC GATE-LEVEL TEST
+========================================
+GATE-LEVEL HALT PASS
+RV128I + ANoC GATE-LEVEL TEST PASS
+tb/riscv/tb_rv128i_anoc_soc_gate.sv:43: $finish called at 520000 (1ps)

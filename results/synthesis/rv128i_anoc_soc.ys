@@ -1,0 +1,31 @@
+read_verilog -sv rtl/include/anoc_rv_pkg.sv
+read_verilog -sv rtl/fifo/anoc_rv_fifo.sv
+read_verilog -sv rtl/fifo/anoc_rv_priority_fifo.sv
+read_verilog -sv rtl/router/anoc_rv_arbiter.sv
+read_verilog -sv rtl/router/anoc_rv_packet.sv
+read_verilog -sv rtl/router/anoc_rv_packet_parser.sv
+read_verilog -sv rtl/router/anoc_rv_routing_unit.sv
+read_verilog -sv rtl/router/anoc_rv_router.sv
+read_verilog -sv rtl/router/anoc_rv_router_buffered.sv
+read_verilog -sv rtl/noc/anoc_rv_mesh.sv
+read_verilog -sv rtl/riscv/rv128i_alu.sv
+read_verilog -sv rtl/riscv/rv128i_regfile.sv
+read_verilog -sv rtl/riscv/rv128i_decoder.sv
+read_verilog -sv rtl/riscv/rv128i_pc.sv
+read_verilog -sv rtl/riscv/rv128i_fetch.sv
+read_verilog -sv rtl/riscv/rv128i_cpu.sv
+read_verilog -sv rtl/riscv/rv128i_noc_packetizer.sv
+read_verilog -sv rtl/riscv/rv128i_anoc_node.sv
+read_verilog -sv rtl/riscv/rv128i_anoc_memory.sv
+read_verilog -sv rtl/riscv/rv128i_anoc_mesh_top.sv
+read_verilog -sv rtl/riscv/rv128i_anoc_soc_top.sv
+
+hierarchy -top rv128i_anoc_soc_top
+proc
+opt
+flatten
+opt
+clean
+
+write_verilog -noattr results/synthesis/rv128i_anoc_soc_netlist.v
+stat

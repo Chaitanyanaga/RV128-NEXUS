@@ -1,0 +1,17 @@
+read_verilog -sv results/synthesis/anoc_rv_router_buffered_synth.sv
+read_verilog -sv results/synthesis/anoc_rv_mesh_4x4_synth.sv
+
+hierarchy -top anoc_rv_mesh_4x4_synth
+
+proc
+opt
+fsm
+opt
+memory
+opt
+techmap
+opt
+
+write_verilog -noattr results/synthesis/anoc_rv_mesh_4x4_netlist.v
+
+stat

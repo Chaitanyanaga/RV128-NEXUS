@@ -1,0 +1,14 @@
+read_verilog -sv results/synthesis/anoc_rv_mesh_4x4_netlist.v
+read_verilog -sv results/synthesis/anoc_rv_mesh_4x4_asic_top.sv
+
+hierarchy -top anoc_rv_mesh_4x4_asic_top
+
+proc
+opt
+flatten
+opt
+clean
+
+write_verilog -noattr results/synthesis/anoc_rv_mesh_4x4_asic_top_netlist.v
+
+stat

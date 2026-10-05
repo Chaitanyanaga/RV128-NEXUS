@@ -1,0 +1,21 @@
+read_verilog -sv \
+rtl/common/anoc_rv_pkg.sv \
+rtl/router/anoc_rv_routing_unit.sv \
+rtl/router/anoc_rv_arbiter.sv \
+rtl/router/anoc_rv_router_buffered.sv \
+rtl/noc/anoc_rv_mesh.sv
+
+hierarchy -top anoc_rv_mesh
+
+proc
+opt
+fsm
+opt
+memory
+opt
+techmap
+opt
+
+write_verilog -noattr results/synthesis/anoc_rv_mesh_netlist.v
+
+stat

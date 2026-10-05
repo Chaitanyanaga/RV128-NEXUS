@@ -1,0 +1,51 @@
+# Simulation artifacts
+*.vvp
+*_sim
+*.vcd
+*.fst
+*.lxt
+*.log
+
+# Editor / OS files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Build / temporary directories
+tmp/
+temp/
+build/
+
+# LibreLane generated runs
+librelane/runs/*
+
+# Large generated synthesis/physical-design outputs
+*.odb
+*.lef
+*.def
+*.spice
+*.spef
+*.sdf
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Keep selected verification waveforms
+!results/riscv/rv128i_cpu_wave.vcd
+!results/riscv/rv128i_anoc_end_to_end_wave.vcd
+!results/riscv/rv128i_anoc_read_wave.vcd
+
+# Verification logs to keep
+!results/riscv/*.log
+!results/synthesis/*.log
+env.sh
+
+# Large generated reports/artifacts
+results/rv128i_anoc_librelane_5ns.log
+results/gate_level/*.dot
+
+# Generated LibreLane run directory
+librelane/runs/

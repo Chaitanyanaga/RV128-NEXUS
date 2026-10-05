@@ -1,0 +1,18 @@
+VCD info: dumpfile results/riscv/rv128i_anoc_read_wave.vcd opened for output.
+WRITE PASS
+ADDR = 00000000000000000000000000000080
+DATA = deadbeef12345678aaaabbbbcafe4321
+READ RESPONSE
+DATA = deadbeef12345678aaaabbbbcafe4321
+READ PASS
+========================================
+ RV128I -> ANoC -> MEMORY READ/WRITE
+========================================
+DESTINATION : (3,3)
+WRITE       : PASS
+READ        : PASS
+DATA MATCH  : PASS
+========================================
+ RV128I ANOC BIDIRECTIONAL TEST PASS
+========================================
+results/riscv/waveforms/tb_rv128i_anoc_read_wave.sv:136: $finish called at 386000 (1ps)
