@@ -383,6 +383,6 @@ RTL source and testbench files are available under `rtl/` and `tb/`.
 
 ## Author
 
-**Nani Naidu**
+**Naga Chaithanya**
 
 RV128-NEXUS is an ASIC/VLSI project covering RTL design, verification, synthesis, physical implementation, and final GDSII generation.
